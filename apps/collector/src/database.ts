@@ -34,7 +34,7 @@ export class Store {
   const digest = hash(m.content);
   const old = this.db.prepare('SELECT id,hash,content FROM messages WHERE conversation_id=? AND source_id=?').get(m.conversationId,m.id);
   const id = old ? String(old.id) : randomUUID();
-  if (!old) this.db.prepare('INSERT INTO messages VALUES(?,?,?,?,?,?,?,?,?,?)').run(id,sessionId,m.conversationId,m.id,m.role,m.content,m.createdAt,m.sequence,digest);
+  if (!old) this.db.prepare('INSERT INTO messages(id,session_id,conversation_id,source_id,role,content,created_at,sequence,hash) VALUES(?,?,?,?,?,?,?,?,?)').run(id,sessionId,m.conversationId,m.id,m.role,m.content,m.createdAt,m.sequence,digest);
   else if (old.hash !== digest) {
    this.db.prepare('INSERT OR IGNORE INTO message_revisions VALUES(?,?,?,?)').run(id,String(old.hash),String(old.content),observedAt);
    this.db.prepare('UPDATE messages SET content=?,hash=?,sequence=? WHERE id=?').run(m.content,digest,m.sequence,id);

@@ -1,0 +1,9 @@
+{
+ "manifest_version": 3, "name": "GPT Learning Tracker", "version": "0.1.0",
+ "description": "本地记录有效学习时间，自动同步 Obsidian。页面无面板，默认不上传聊天。",
+ "minimum_chrome_version": "120", "permissions": ["storage", "alarms"],
+ "host_permissions": ["http://127.0.0.1/*"],
+ "background": { "service_worker": "background.js", "type": "module" },
+ "content_scripts": [{ "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*"], "js": ["content.js"], "run_at": "document_idle" }],
+ "action": { "default_title": "GPT Learning Tracker", "default_popup": "popup.html" }
+}
