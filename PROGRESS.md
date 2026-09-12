@@ -36,4 +36,4 @@ AWAITING_USER_ACCEPTANCE
 
 ## 最近 Commit
 
-b701e9f（核心实现），最终收尾提交以 git log -1 为准。
+0b0eeac（最终实现）；文档证据提交以 git log -1 为准。

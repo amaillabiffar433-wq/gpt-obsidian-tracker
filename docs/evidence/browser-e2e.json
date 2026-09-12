@@ -1,0 +1,28 @@
+{
+  "kind": "synthetic-browser-extension-e2e",
+  "realChatGPT": false,
+  "run": "D:\\Projects\\GPT-Obsidian-Tracker\\work\\browser-e2e-c8c6c70d-719e-4997-be79-6c934f3af184",
+  "foregroundSeconds": 9.093,
+  "messages": 2,
+  "backgroundDelta": 0,
+  "resumedSeconds": 17.996000000000002,
+  "extensionId": "edfahogllgepcmddkncbdieakcgkoiic",
+  "effectiveSeconds": 20.782000000000004,
+  "notePath": "学习记录/AI交互/会话/2026-09-12-自动化测试：偏导-a538fbda-a093-496e-8e73-1a634312c80e.md",
+  "dailyStats": {
+    "2026-09-12": {
+      "minutes": 0.3464,
+      "sessions": 1,
+      "categories": {
+        "高等数学": 0.3464
+      },
+      "topics": ["偏导"],
+      "sessionIds": ["a538fbda-a093-496e-8e73-1a634312c80e"],
+      "weakPoints": [],
+      "nextActions": [],
+      "mastered": []
+    }
+  },
+  "restartPreserved": true,
+  "passed": true
+}

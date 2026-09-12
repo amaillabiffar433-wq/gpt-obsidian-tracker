@@ -1,0 +1,39 @@
+{
+  "protocolHandshake": true,
+  "readOnlyTools": 8,
+  "results": [
+    {
+      "name": "tracker_today",
+      "passed": true
+    },
+    {
+      "name": "tracker_day",
+      "passed": true
+    },
+    {
+      "name": "tracker_week",
+      "passed": true
+    },
+    {
+      "name": "tracker_sessions",
+      "passed": true
+    },
+    {
+      "name": "tracker_search",
+      "passed": true
+    },
+    {
+      "name": "tracker_topics",
+      "passed": true
+    },
+    {
+      "name": "tracker_weak_points",
+      "passed": true
+    },
+    {
+      "name": "tracker_stats",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

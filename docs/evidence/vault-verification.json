@@ -1,0 +1,16 @@
+{
+  "baselineFiles": 35,
+  "unchangedFiles": 32,
+  "changed": [
+    "D:\\Obsidian\\warehouse\\首页\\启动首页.md",
+    "D:\\Obsidian\\warehouse\\首页\\学习热力图.md",
+    "D:\\Obsidian\\warehouse\\Obsidian配置\\Dashboard\\组件\\60_学习热力图.md"
+  ],
+  "backupHashesVerified": true,
+  "homepageOriginalPrefixPreserved": true,
+  "heatmapsReadActualIntegratedCode": true,
+  "fixtureManualMinutes": 10,
+  "fixtureAutoMinutes": 7,
+  "expectedMergedMinutes": 17,
+  "passed": true
+}
