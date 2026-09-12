@@ -94,7 +94,8 @@ chrome.runtime.onMessage.addListener(
         );
         return result;
       }
-      if (sender.tab) throw new Error("INVALID_SENDER");
+      if (sender.tab && !sender.url?.startsWith(chrome.runtime.getURL("")))
+        throw new Error("INVALID_SENDER");
       if (message.type === "control") {
         const result = await api("/control", {
           action: message.action,
