@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env*
+data/
+logs/
+.cache/
+work/
+backups/
+config/local.json
+coverage/
+*.tsbuildinfo

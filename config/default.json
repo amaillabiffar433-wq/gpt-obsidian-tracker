@@ -1,0 +1,11 @@
+{
+ "vaultPath": "D:\\Obsidian\\warehouse",
+ "port": 17321,
+ "timezone": "Asia/Shanghai",
+ "idleThresholdSeconds": 180,
+ "readingGraceSeconds": 120,
+ "sessionSplitMinutes": 20,
+ "heartbeatStaleSeconds": 30,
+ "obsidian": { "sessionFolder": "学习记录/AI交互/会话", "dailyFolder": "学习记录/AI交互/每日汇总", "dataFolder": "学习记录/AI交互/数据", "dailyNoteFolder": "日常记录", "dailyNoteWeekday": true },
+ "summary": { "enabled": false, "provider": "none", "sendFullConversation": false, "baseUrl": "https://api.openai.com/v1", "model": "", "maxChars": 16000 }
+}

@@ -1,0 +1,8 @@
+node_modules
+dist
+data
+logs
+.cache
+work
+backups
+docs/TASK.md
