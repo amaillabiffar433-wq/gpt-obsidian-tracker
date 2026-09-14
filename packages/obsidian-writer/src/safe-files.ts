@@ -47,6 +47,8 @@ export class SafeFiles {
     readonly store: Store,
   ) {}
   resolve(relative: string): string {
+    if (/^[A-Za-z]:[\\/]/.test(relative) || relative.startsWith("\\\\"))
+      throw new Error("PATH_OUTSIDE_VAULT");
     const base = path.resolve(this.vault),
       full = path.resolve(base, relative),
       rel = path.relative(base, full);
