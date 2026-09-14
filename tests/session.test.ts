@@ -3,6 +3,7 @@ import { sample, setup, T } from "./helpers";
 import { Store } from "../apps/collector/src/database";
 import path from "node:path";
 const opened: ReturnType<typeof setup>[] = [];
+const migrations = path.resolve(process.cwd(), "apps/collector/migrations");
 const fresh = () => {
   const x = setup();
   opened.push(x);
@@ -16,7 +17,7 @@ describe("session lifecycle and SQLite", () => {
     const x = fresh();
     const two = new Store(
       path.join(x.dir, "data/test.sqlite3"),
-      "D:/Projects/GPT-Obsidian-Tracker/apps/collector/migrations",
+      migrations,
     );
     expect(
       two.db.prepare("SELECT count(*) n FROM schema_migrations").get()?.n,

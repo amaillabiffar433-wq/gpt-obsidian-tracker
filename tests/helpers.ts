@@ -4,7 +4,7 @@ import { randomUUID } from "node:crypto";
 import { type Config, type ActivitySample } from "../packages/shared/src/index";
 import { Store } from "../apps/collector/src/database";
 import { SessionEngine } from "../apps/collector/src/session-engine";
-const root = "D:/Projects/GPT-Obsidian-Tracker";
+const root = process.cwd();
 export const T = Date.parse("2026-09-12T10:00:00Z");
 export function sample(
   at = T,
