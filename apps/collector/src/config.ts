@@ -3,9 +3,10 @@ import path from "node:path";
 import dotenv from "dotenv";
 import { configSchema, type Config } from "../../../packages/shared/src/index";
 
-export const PROJECT_ROOT = path.resolve(
-  process.env.TRACKER_ROOT ?? "D:/Projects/GPT-Obsidian-Tracker",
-);
+const defaultRoot =
+  process.env.TRACKER_ROOT ??
+  (process.platform === "win32" ? "D:/Projects/GPT-Obsidian-Tracker" : process.cwd());
+export const PROJECT_ROOT = path.resolve(defaultRoot);
 export function loadConfig(root = PROJECT_ROOT): Config {
   if (process.platform === "win32" && !/^d:[\\/]/i.test(root))
     throw new Error("PROJECT_MUST_BE_ON_D_DRIVE");
