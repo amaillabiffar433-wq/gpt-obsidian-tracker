@@ -1,6 +1,14 @@
 {
   "name": "gpt-obsidian-tracker",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amaillabiffar433-wq/gpt-obsidian-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amaillabiffar433-wq/gpt-obsidian-tracker/issues"
+  },
+  "homepage": "https://github.com/amaillabiffar433-wq/gpt-obsidian-tracker#readme",
   "private": true,
   "type": "module",
   "engines": {
